@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="小胖的宣言,小胖的告白">
+ <meta name="description" content="小胖的宣言,小胖的告白">
+<title>小胖的宣言</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+<!-- 禁止F12 -->
+<script>function fuckyou(){
+ window.close(); //关闭当前窗口(防抽)
+ window.location="about:blank"; //将当前窗口跳转置空白页
+}
+ function ck() {
+ console.profile();
+ console.profileEnd();
+ //我们判断一下profiles里面有没有东西，如果有，肯定有人按F12了，没错！！
+ if(console.clear) { console.clear() };
+ if (typeof console.profiles =="object"){
+ return console.profiles.length > 0;
+ }
+}
+function hehe(){
+if( (window.console && (console.firebug || console.table && /firebug/i.test(console.table()) )) || (typeof opera == 'object' && typeof opera.postError == 'function' && console.profile.length > 0)){
+ fuckyou();
+}
+if(typeof console.profiles =="object"&&console.profiles.length > 0){
+fuckyou();
+}
+}
+hehe();
+window.onresize = function(){
+if((window.outerHeight-window.innerHeight)>200)
+//判断当前窗口内页高度和窗口高度，如果差值大于200，那么呵呵
+ fuckyou();
+}</script>
+</head>
+<audio autoplay="autoplay">
+<source src="http://www.ljz666.com/music/522.mp3" type="audio/mpeg">
+</audio>
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*2016-07-12</span><br />
+			<span class="space"/><span class="comments">这是我们成为好友的第一天</span><br />
+			
+			<span class="space"/><span class="comments">*/</span><br />
+			Boy name = <span class="keyword">Mr</span> 小胖<br />
+			Girl name = <span class="keyword">Mrs</span> 媛媛<br />
+			<span class="comments">亲爱的媛媛： </span><br />
+			感谢你来到这个世界，在最美丽的时候与我相遇，因为有了你，我的人生才充满了甜蜜快乐而多姿多彩。<br />
+			<span class="comments">感谢你走入我的生命，做我的爱人，虽然我不是你遇到的最好的，但我一定会努力做到最好。</span><br />
+			 希望你愿意嫁给我，把自己的终生托付于我，一个女人对一个男人最大的信任，还有什么比嫁给他更重的托付？在此后漫长的岁月里，希望你愿意牵着我的手一起走过。<br />
+			<span class="comments">感谢你选择了我，不离不弃地终生和我一起度过，有了你，我才能够在伤心的时候不再哭泣，寂寞的时候不再孤单。</span><br />
+			感谢你愿意和我这样一个永远长不大的男人一起生活，我可能会在有些时候惹你生气，也可能在你伤心的时候不懂得安慰你，但是请你相信，我在心里一定是爱你的。<br />
+			<span class="comments">我会努力工作，因为以后我不再是一个人了。</span><br />
+			感谢你愿意给我一个家,虽然这个家很小，可我相信在你的打理下，我们的小家一定是温馨而整洁的。<br />
+			<span class="comments">感谢你的温柔与细心，在我心里你将是最美丽的，还有你的善良与贤淑，一个女人具备了这些品质，无论她到了多大年纪，即使牙齿都掉光的时候，她依然是最美丽的女人。</span><br />
+			<span class="comments">感谢你愿意让我喊你老婆，这是我最大的期待。一个女人对男人的托付，还有什么比让喊自己“老婆”更信任的称呼？一个男人对女人最亲昵的称呼，还有什么比称呼她“老婆”更甜蜜和自豪的呢？</span><br />
+			<span class="comments">愿意在夕阳西下的时候依偎在我的身旁，一起与我看夕阳看海或是看电视，这份依赖不但是你对我的，更是我对你深深的依恋。为了我，你也一定要健康快乐！</span><br />
+			<br>
+			<br>
+			最后我想说:<br />
+			亲爱滴媛媛, 嫁给小胖吧，小胖会爱你到永远永远！<br />
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					亲爱的媛媛，这是我们相识的时光。
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					爱你直到永永远远。<br/>
+					<div class="signature">- 小胖</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2016,7, 12);
+together.setHours(20);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+<div style="text-align:center;clear:both">
+
+</div>
+</body>
+</html>
